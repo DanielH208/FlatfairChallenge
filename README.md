@@ -42,6 +42,7 @@ Adding more validation checks using try catch blocks. For example, checking miss
 
 
 Test improvements:
+
 Expanding test data to test all paths of the code. For example, you could add a client with a fixed fee to test this scenario. 
 
 Expanding the test suite to test more values on the boundaries. For example, checking all the edge values such as those included in the greater / less than or equals too checks.
