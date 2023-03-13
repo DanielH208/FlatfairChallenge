@@ -8,13 +8,16 @@ calculate_membership_fee explanation:
 
 
 find_parent function explanation:
+
 Function takes in a child parameter it then iterates through the org_structure list checking each iteration if the current units name matches the passed in child’s parents name. If it does it means that current unit is the parent and so it returns the current unit. If the for loop iterates all the way through and doesn’t find a matching unit then the function returns None.
 
 find_fee function explanation:
+
 Function takes in a parent parameter it then checks if the parent config has_fixed_membership_fee value is equal to true. If it does then the function returns the parents config has_fixed_membership_fee value. If the parent config has_fixed_membership_fee value isn’t set to true, then the function returns None.
 
 
 Testing:
+
 See test_CalculateMembershipFee.py for the 9 unit tests.
 Test data used is the provided example test organisation structure config. I’ve added an extra parent tag on each unit to allow for traversal up the tree. 
 See below for test results:
